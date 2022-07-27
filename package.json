@@ -8,9 +8,6 @@
     "start": "npm run develop",
     "build": "gatsby build"
   },
-  "engines": {
-    "node": ">=14"
-  },
   "engineStrict": true,
   "dependencies": {
     "gatsby": "^4.19.2",
