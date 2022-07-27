@@ -7,8 +7,11 @@ import Call from '../components/Call';
 const Team = props => {
   const team = props.data.team.edges;
   const { intro } = props.data;
-  const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
-
+  const introImageClasses = `intro-image ${
+    intro.frontmatter.intro_image_absolute && 'intro-image-absolute'
+  } ${
+    intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'
+  }`;
   return (
     <Layout bodyClass="page-teams">
       <SEO title="Team" />
